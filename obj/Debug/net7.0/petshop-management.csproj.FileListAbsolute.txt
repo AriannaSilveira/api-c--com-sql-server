@@ -130,3 +130,4 @@ C:\Selecao\Ploomes\projeto1\petshop-management\obj\Debug\net7.0\refint\petshop-m
 C:\Selecao\Ploomes\projeto1\petshop-management\obj\Debug\net7.0\petshop-management.pdb
 C:\Selecao\Ploomes\projeto1\petshop-management\obj\Debug\net7.0\petshop-management.genruntimeconfig.cache
 C:\Selecao\Ploomes\projeto1\petshop-management\obj\Debug\net7.0\ref\petshop-management.dll
+C:\Selecao\Ploomes\projeto1\petshop-management\bin\Debug\net7.0\$teste.xml

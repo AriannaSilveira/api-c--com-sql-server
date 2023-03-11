@@ -20,6 +20,9 @@ namespace petshop_management
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
             });
+            ///<summary> 
+            ///TESTE BATATA
+            ///</summary>
 
             var builder = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json");
@@ -50,6 +53,7 @@ namespace petshop_management
             }
 
             app.UseRouting();
+            app.UseAuthorization();
             app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
