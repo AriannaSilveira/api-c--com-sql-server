@@ -16,10 +16,11 @@ namespace petshop_management.Controllers
             _context = context;
         }
 
-       [HttpGet]
+        [HttpGet]
         public ActionResult<IEnumerable<Pet>> GetPets()
         {
-            return _context.Pets.ToList();
+            var result = _context.Pets.ToList();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]

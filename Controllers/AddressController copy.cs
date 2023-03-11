@@ -16,44 +16,33 @@ namespace petshop_management.Controllers
             _context = context;
         }
 
-        // [Route("Address")]
-        //  public ActionResult Index()
-        // {
-            
-        //     //var Address = new IEnumerable<Address>;
-        //     var addresses = GetAddresses();
-        //     ViewBag.Addresses = addresses;
-            
-        //     return View();
-        // }
-        
-        // GET: Address
        [HttpGet]
         public ActionResult<IEnumerable<Address>> GetAddresses()
         {
-            return _context.Addresses.ToList();
+            var result = _context.Addresses.ToList();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
         public ActionResult<Address> GetAddress(int id)
         {
-            var Address = _context.Addresses.Find(id);
+            var address = _context.Addresses.Find(id);
 
-            if (Address == null)
+            if (address == null)
             {
                 return NotFound();
             }
 
-            return Address;
+            return address;
         }
 
         [HttpPost]
-        public ActionResult<Address> PostAddress(Address Address)
+        public ActionResult<Address> PostAddress(Address address)
         {
-            _context.Addresses.Add(Address);
+            _context.Addresses.Add(address);
             _context.SaveChanges();
 
-            return CreatedAtAction(nameof(GetAddress), new { id = Address.Id }, Address);
+            return CreatedAtAction(nameof(GetAddress), new { id = address.Id }, address);
         }
 
     }

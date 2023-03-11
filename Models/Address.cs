@@ -7,7 +7,7 @@ namespace petshop_management.Models
         public string District { get; set; }
         public string City { get; set; }
         public string State { get; set; }
-        public ICollection<Client> Clients { get; set; }
+        public IEnumerable<Client> Clients { get; set; }
     }
 }
 

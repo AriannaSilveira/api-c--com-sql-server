@@ -16,22 +16,11 @@ namespace petshop_management.Controllers
             _context = context;
         }
 
-        // [Route("Client")]
-        //  public ActionResult Index()
-        // {
-            
-        //     //var clients = new IEnumerable<Client>;
-        //     var clients = GetClients();
-        //     ViewBag.Client = clients;
-            
-        //     return View();
-        // }
-        
-        // GET: Clients
-       [HttpGet]
+        [HttpGet]
         public ActionResult<IEnumerable<Client>> GetClients()
         {
-            return _context.Clients.ToList();
+            var result = _context.Clients.ToList();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
