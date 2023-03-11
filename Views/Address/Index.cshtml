@@ -1,0 +1,42 @@
+@model IEnumerable<petshop_management.Models.Address>
+
+    @{
+    var addresses = ViewBag.Addresses as List<petshop_management.Models.Address>;
+    }
+
+@{
+    ViewData["Title"] = "Address";
+}
+
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4">Endereço</h1>
+    <p class="lead">Aqui vemos o resultado da implementação da <i>Model</i> <strong>Endereço</strong>.</p>
+  </div>
+</div>
+<div class="container">
+    <table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Rua</th>
+      <th scope="col">Bairro</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var address in addresses)
+      {
+        <tr>
+            <td>@address.Id</td>
+            <td>@address.Street</td>
+            <td>@address.District</td>
+            <td>@address.City</td>
+            <td>@address.State</td>
+        </tr>
+      }
+   
+  </tbody>
+    </table>
+</div>
