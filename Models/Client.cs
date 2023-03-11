@@ -11,6 +11,9 @@ namespace petshop_management.Models
         [Column("address_id")]
         public int AddressId { get; set; }
         public Address Address { get; set; }
+        public ICollection<Pet> Pets { get; set; }
+
+        
     }
 }
 

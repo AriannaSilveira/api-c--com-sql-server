@@ -18645,6 +18645,11 @@
   "RootNamespace": "petshop_management",
   "Documents": [
     {
+      "FilePath": "c:\\Selecao\\Ploomes\\projeto1\\petshop-management\\Views\\Pet\\Index.cshtml",
+      "TargetPath": "Views\\Pet\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Selecao\\Ploomes\\projeto1\\petshop-management\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

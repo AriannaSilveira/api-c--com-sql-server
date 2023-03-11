@@ -31,6 +31,7 @@ namespace petshop_management
             services.AddDbContext<MyDbContext>(options => options.UseSqlServer(connectionString));
             services.AddDbContext<ClientContext>(options => options.UseSqlServer(connectionString));
             services.AddDbContext<AddressContext>(options => options.UseSqlServer(connectionString));
+             services.AddDbContext<PetContext>(options => options.UseSqlServer(connectionString));
 
         }
 
@@ -64,6 +65,10 @@ namespace petshop_management
                 endpoints.MapControllerRoute(
                     name: "Address",
                     pattern: "{controller=Address}/{action=Index}"
+                );
+                endpoints.MapControllerRoute(
+                    name: "Pet",
+                    pattern: "{controller=Pet}/{action=Index}"
                 );
             });
         }

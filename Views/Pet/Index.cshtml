@@ -1,0 +1,44 @@
+@model IEnumerable<petshop_management.Models.Address>
+
+    @{
+    var pets = ViewBag.Pets as List<petshop_management.Models.Pet>;
+    }
+
+@{
+    ViewData["Title"] = "Pet";
+}
+
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4">Pet</h1>
+    <p class="lead">Aqui vemos o resultado da implementação da <i>Model</i> <strong>Pet</strong>.</p>
+  </div>
+</div>
+<div class="container">
+    <table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Raça</th>
+      <th scope="col">Dono</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var pet in pets)
+      {
+        <tr>
+            <td>@pet.Id</td>
+            <td>@pet.Name</td>
+            <td>@pet.Age</td>
+            <td>@pet.Type</td>
+            <td>@pet.Breed</td>
+            <td>@pet.ClientId</td>
+        </tr>
+      }
+   
+  </tbody>
+    </table>
+</div>

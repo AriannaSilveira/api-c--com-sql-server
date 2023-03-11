@@ -23,6 +23,10 @@ namespace petshop_management.Mappings
                 .HasForeignKey(c => c.AddressId)
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(c => c.Pets)
+                .WithOne(p => p.Client)
+                .HasForeignKey(p => p.ClientId)
+                .OnDelete(DeleteBehavior.Restrict); 
             
            
 
