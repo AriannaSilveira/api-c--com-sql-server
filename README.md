@@ -1,8 +1,8 @@
 # API em C# MVC com Entity Framework com acesso a um banco de dados SQL Server
 
-Esta API tem o objetivo de ser apenas um serviço de armazenamento e obtenção de dados utilizando HTTP e JSON. Para isso, optei por fazer um simples sistema de gerenciamento de um Pet Shop.
-
 Esta é uma API criada em C# utilizando o padrão MVC e o framework de mapeamento objeto-relacional Entity Framework. Aqui, apresentamos todas as informações importantes sobre a API.
+
+Esta API tem o objetivo de ser apenas um serviço de armazenamento e obtenção de dados utilizando HTTP e JSON. Para isso, optei por fazer um simples sistema de gerenciamento de um Pet Shop.
 
 ## Visão geral
 
