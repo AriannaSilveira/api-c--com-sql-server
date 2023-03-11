@@ -1,6 +1,6 @@
 # API em C# MVC com Entity Framework com acesso a um banco de dados SQL Server
 
-    Esta API tem o objetivo de ser apenas um serviço de armazenamento e obtenção de dados utilizando HTTP e JSON. Para isso, optei por fazer um simples sistema de gerenciamento de um Pet Shop.
+Esta API tem o objetivo de ser apenas um serviço de armazenamento e obtenção de dados utilizando HTTP e JSON. Para isso, optei por fazer um simples sistema de gerenciamento de um Pet Shop.
 
 Esta é uma API criada em C# utilizando o padrão MVC e o framework de mapeamento objeto-relacional Entity Framework. Aqui, apresentamos todas as informações importantes sobre a API.
 
@@ -26,6 +26,12 @@ Esta API foi criada com o objetivo de fornecer um serviço que permita a consult
 1. Clone este repositório em seu computador
 2. Abra o projeto no Microsoft Visual Studio Code
 3. Execute a aplicação dando o comando '*dotnet run*' em seu terminal.
+
+## Testes
+
+1. Com a API em execução, verá que abriu um link em seu navegador com o localhost.
+2. Neste link adicione: /swagger
+3. Você verá a documentação criada pelo swagger e poderá fazer seus testes!
 
 ## Modelagem Relacional
 
